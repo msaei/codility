@@ -1,5 +1,7 @@
 # codility
 ## my solutions for codility lessons
+
+> Lesson 1: BinaryGap
 https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
 ### solution in javascript
 ```
