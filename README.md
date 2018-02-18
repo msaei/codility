@@ -5,9 +5,9 @@ https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
 ```
   function solution(N) {
     
-    let gap = 0;
+    let max_gap = 0;
     let started = false;
-    let count = 0;
+    let gap = 0;
     let remain = 0;
     
     
@@ -16,15 +16,15 @@ https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
         
         if (remain == 1) {
             started = true;
-            if (count > gap) { gap = count };
-            count = 0;
+            if (gap > max_gap) { max_gap = gap };
+            gap = 0;
         } else if ( started == true) {
-            count++;
+            gap++;
         }
         
         N = Math.round( (N - remain) / 2);
     }
-    if ( count > gap ) { gap = count };
-    return gap;
+    if ( gap > max_gap ) { max_gap = gap };
+    return max_gap;
   }
 ```
