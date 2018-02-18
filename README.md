@@ -1,7 +1,7 @@
-## codility
-# my solutions for codility lessons
+# codility
+## my solutions for codility lessons
 https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
-# solution in javascript
+### solution in javascript
 ```
   function solution(N) {
     
@@ -29,7 +29,7 @@ https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
   }
 ```
 
-# solution in Java
+### solution in Java
 ```
 class Solution {
     public int solution(int N) {
