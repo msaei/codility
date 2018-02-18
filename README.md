@@ -1,7 +1,7 @@
 ## codility
 # my solutions for codility lessons
 https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
-
+# solution in javascript
 ```
   function solution(N) {
     
@@ -28,3 +28,29 @@ https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
     return max_gap;
   }
 ```
+
+# solution in Java
+```
+class Solution {
+    public int solution(int N) {
+        // write your code in Java SE 8
+        int gap = 0;
+        int maxGap = 0;
+        int remain = 0;
+        boolean started = false;
+        
+        while (N > 0){
+            remain = N % 2;
+            if (remain == 1) {
+                started = true;
+                if ( gap > maxGap ) { maxGap = gap; }
+                gap = 0;
+            } else if ( started == true ) {
+                gap++;
+            }
+            N = N / 2;
+        }
+        if ( gap > maxGap ) { maxGap = gap; }
+        return maxGap;
+    }
+}```
