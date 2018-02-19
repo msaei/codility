@@ -56,3 +56,27 @@ class Solution {
     }
 }
 ```
+
+### solution in python
+```
+
+def solution(N):
+    # write your code in Python 3.6
+    remain = 0
+    gap = 0
+    max_gap = 0
+    started = "no"
+    while ( N > 0 ) :
+        remain = N % 2
+        if remain == 1 :
+            started = "yes"
+            if gap > max_gap : max_gap = gap
+            gap = 0
+        elif started == "yes" : gap = gap + 1
+        N = N//2
+    if gap > max_gap : max_gap = gap
+    return max_gap
+    
+    pass
+    
+ ```
