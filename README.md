@@ -105,3 +105,25 @@ class Solution {
 }
 
 ```
+
+### solution in C
+```
+int solution(int N) {
+    // write your code in C99 (gcc 6.2.0)
+    int gap = 0, max_gap = 0, remain = 0, started = 0;
+    while ( N > 0 ) {
+        remain = N % 2;
+        if ( remain == 1 ) {
+            started = 1;
+            if ( gap > max_gap ) { max_gap = gap ; }
+            gap = 0;
+        } else if ( started == 1 ) {
+            gap = gap + 1;
+        }
+        N = ( N - remain ) / 2;
+    }
+    if ( gap > max_gap ) { max_gap = gap ; }
+    return max_gap;
+        
+    }
+    ```
