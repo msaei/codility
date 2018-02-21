@@ -126,4 +126,5 @@ int solution(int N) {
     return max_gap;
         
     }
-    ```
+    
+```
