@@ -83,6 +83,25 @@ def solution(N):
 ### solution in c# 
 
 ```
-
+class Solution {
+    public int solution(int N) {
+        // write your code in C# 6.0 with .NET 4.5 (Mono)
+        int gap=0, max_gap=0, remain=0;
+        bool started = false; 
+        while (N > 0){
+            remain = N % 2;
+            if ( remain == 1 ){
+                started = true;
+                if ( gap > max_gap) { max_gap = gap; }
+                gap = 0;
+            } else if ( started ) {
+                gap = gap + 1;
+            }
+            N = (N-remain) / 2;
+        }
+        if ( gap > max_gap) { max_gap = gap; }
+        return max_gap;
+    }
+}
 
 ```
