@@ -80,3 +80,9 @@ def solution(N):
     pass
     
  ```
+### solution in c# 
+
+```
+
+
+```
