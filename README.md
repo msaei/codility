@@ -130,3 +130,15 @@ int solution(int N) {
 ```
 
 Lesson 2 : OddOccurrencesInArray https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
+### solution in javascript
+```
+function solution(A) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    let result = 0;
+    for ( i = 0; i < A.length; i++) {
+        result = result ^ A[i];
+    }
+    return result;
+}
+
+```
