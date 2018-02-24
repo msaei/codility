@@ -1,6 +1,6 @@
 ## Lesson 1: Iterations
 ## BinaryGap
-[BinaryGap] (https://app.codility.com/programmers/lessons/1-iterations/binary_gap/.)
+[link to question] (https://app.codility.com/programmers/lessons/1-iterations/binary_gap/.)
 ### solution in javascript
 ```
   function solution(N) {
