@@ -27,3 +27,15 @@ class Solution {
 }
 
 ```
+
+### solution in Python
+```
+def solution(A):
+    # write your code in Python 3.6
+    result = 0;
+    for number in A:
+        result = result ^ number
+    return result
+    pass
+    
+ ```
