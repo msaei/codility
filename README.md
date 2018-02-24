@@ -6,6 +6,8 @@
 
 [link to lesson1] (lessons/lesson1.md)
 
+[link to lesson1] (https://github.com/msaei/codility/blob/master/lessons/lesson1.md)
+
  Lesson 1: BinaryGap https://app.codility.com/programmers/lessons/1-iterations/binary_gap/.
 ### solution in javascript
 ```
