@@ -1,4 +1,7 @@
-Lesson 2
+## Lesson 2: Arrays
+## CyclicRotation
+[link to the question] (https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/)
+### solution in javascript
 
 ```
 function solution(A, K) {
@@ -13,7 +16,7 @@ function solution(A, K) {
 }
 
 ```
-or
+### solution in javascript (second solution)
 
 ```
 function solution(A, K) {
