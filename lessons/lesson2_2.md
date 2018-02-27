@@ -30,3 +30,27 @@ function solution(A, K) {
 }
 
 ```
+
+### solution in Java
+
+```
+class Solution {
+    public int[] solution(int[] A, int K) {
+        // write your code in Java SE 8
+        if ( A.length == 0 ) {
+            return A;
+        }
+        int[] B = new int[A.length];
+        K = K % A.length;
+        for ( int i = 0; i < A.length; i++) {
+            if ( i + K < A.length) {
+                B[i + K] = A[i];
+            } else {
+                B[i + K - A.length] = A[i];
+            }
+        }
+        return B;
+    }
+}
+
+```
