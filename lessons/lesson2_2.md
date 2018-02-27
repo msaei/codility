@@ -54,3 +54,19 @@ class Solution {
 }
 
 ```
+
+### solution in python
+
+```
+def solution(A, K):
+    # write your code in Python 3.6
+    if len(A) == 0:
+        return A;
+    K = K % len(A)
+    for i in range(K):
+        item = A.pop()
+        A.insert(0, item)
+    return A;
+    pass
+    
+ ```
