@@ -15,3 +15,18 @@ function solution(A) {
 }
 
 ```
+
+### solution for Java
+```
+class Solution {
+    public int solution(int[] A) {
+        // write your code in Java SE 8
+        int missed = A.length + 1;
+        for (int i = 0; i < A.length; i++){
+            missed += i + 1 - A[i];
+        }
+        return missed;
+    }
+}
+
+```
