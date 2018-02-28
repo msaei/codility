@@ -9,3 +9,5 @@ link to lesson2-2: Arrays CycelicRotation (https://github.com/msaei/codility/blo
 link to lesson3-1: TimeComplexity TapeEquilibrium (https://github.com/msaei/codility/blob/master/lessons/lesson3-1.md)
 
 link to lesson3-2: TimeComplexity frogJump (https://github.com/msaei/codility/blob/master/lessons/lesson3-2.md)
+
+link to lesson3-3: TimeComplexity PermMissingElem (https://github.com/msaei/codility/blob/master/lessons/lesson3-3.md)
