@@ -24,7 +24,7 @@ function solution(A) {
             minDiff = Math.abs(diff);
         }
     }
-    return minDiff
+    return minDiff;
 }
 
 ```
