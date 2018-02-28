@@ -55,3 +55,21 @@ class Solution {
 }
 
 ```
+
+### solution in python
+```
+def solution(A):
+    # write your code in Python 3.6
+    total = sum(A)
+    diff = 2 * A[0] - total
+    minDiff = abs(diff)
+    for i in range(1, len(A) - 1):
+        diff = diff + 2 * A[i]
+        if (abs(diff) < minDiff):
+            minDiff = abs(diff)
+    
+    return minDiff
+            
+    pass
+    
+```
