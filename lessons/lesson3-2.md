@@ -29,3 +29,15 @@ class Solution {
 }
 
 ```
+
+### solution in python
+```
+def solution(X, Y, D):
+    # write your code in Python 3.6
+    jumps = (Y - X) // D
+    if ((Y - X) % D != 0):
+        jumps = jumps + 1
+    return jumps
+    pass
+    
+```
