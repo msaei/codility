@@ -1,0 +1,13 @@
+### solution for javascript
+```
+function solution(A) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    N = A.length + 1;
+    missed = N * (N + 1) / 2;
+    for ( i = 0; i < A.length; i++) {
+        missed -= A[i];
+    }
+    return missed;
+}
+
+```
