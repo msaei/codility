@@ -28,3 +28,30 @@ function solution(A) {
 }
 
 ```
+
+### solution in Java
+```
+import java.util.stream.*;
+import java.lang.*;
+
+class Solution {
+    public int solution(int[] A) {
+        // write your code in Java SE 8
+        int sum = IntStream.of(A).sum();
+        int diff = 2 * A[0] - sum;
+        int minDiff = Math.abs(diff);
+        for ( int i = 1; i < A.length - 1; i++) {
+            diff = diff + 2 * A[i];
+            if ( diff == 0 ) { 
+                minDiff = 0;
+                break;
+            }
+            if ( Math.abs(diff) < minDiff ) {
+                 minDiff = Math.abs(diff);
+            }
+        }
+        return minDiff;
+    }
+}
+
+```
