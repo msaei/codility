@@ -30,3 +30,15 @@ class Solution {
 }
 
 ```
+
+### solution for python
+```
+def solution(A):
+    # write your code in Python 3.6
+    missed = len(A) + 1
+    for i in range (len(A)):
+        missed += i + 1 - A[i]
+    return missed
+    pass
+    
+```
