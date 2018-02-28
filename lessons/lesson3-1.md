@@ -1,4 +1,8 @@
+## Lesson 3: Time Complexity
+## TapeEquilibrium
+[link to question] (https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/)
 
+### solution in javascript
 ```
 function solution(A) {
     // write your code in JavaScript (Node.js 8.9.4)
