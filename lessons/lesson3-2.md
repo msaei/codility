@@ -10,7 +10,7 @@ function solution(X, Y, D) {
     if ((Y - X) % D != 0 ) {
         jumps++;
     } 
-    return jumps + 1;
+    return jumps;
 }
 
 ```
