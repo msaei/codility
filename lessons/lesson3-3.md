@@ -1,3 +1,7 @@
+## Lesson 3: Time Complexity
+## PermMissingElm
+link to question: (https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/)
+
 ### solution for javascript
 ```
 function solution(A) {
