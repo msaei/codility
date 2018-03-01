@@ -32,3 +32,17 @@ class Solution {
 }
 
 ```
+
+### solution for python
+```
+def solution(A):
+    # write your code in Python 3.6
+    result = 0
+    for i in range(len(A)):
+        result = result ^ ((i + 1) ^ A[i])
+    if (result == 0):
+        return 1
+    return 0
+    pass
+    
+```
