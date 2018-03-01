@@ -14,3 +14,21 @@ function solution(A) {
 }
 
 ```
+
+### solution for Java
+```
+class Solution {
+    public int solution(int[] A) {
+        // write your code in Java SE 8
+        int result = 0;
+        for (int i = 0; i < A.length; i++) {
+            result = result ^ ((i + 1) ^ A[i]);
+        }
+        if ( result == 0 ){
+            return 1;
+        }
+        return 0;
+    }
+}
+
+```
