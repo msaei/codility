@@ -11,3 +11,5 @@ link to lesson3-1: TimeComplexity TapeEquilibrium (https://github.com/msaei/codi
 link to lesson3-2: TimeComplexity frogJump (https://github.com/msaei/codility/blob/master/lessons/lesson3-2.md)
 
 link to lesson3-3: TimeComplexity PermMissingElem (https://github.com/msaei/codility/blob/master/lessons/lesson3-3.md)
+
+link to lesson4-1: Counting Elements PremCheck (https://github.com/msaei/codility/blob/master/lessons/lesson4-1.md)
