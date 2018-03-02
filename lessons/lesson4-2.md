@@ -18,3 +18,27 @@ function solution(X, A) {
 }
 
 ```
+
+### solution for javascript 2
+```
+function solution(X, A) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    let = lastLeave = 0;
+    let = happenTime = 0;
+    if (X > A.length) {
+        return -1;
+    }
+    for ( i = 1; i <= X; i++){
+        happenTime = A.indexOf(i);
+        if (happenTime == -1 ){
+            return -1;
+        }
+        if (happenTime > lastLeave){
+            lastLeave = happenTime;
+        }
+        
+    }
+    return lastLeave;
+}
+
+```
