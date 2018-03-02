@@ -13,3 +13,5 @@ link to lesson3-2: TimeComplexity frogJump (https://github.com/msaei/codility/bl
 link to lesson3-3: TimeComplexity PermMissingElem (https://github.com/msaei/codility/blob/master/lessons/lesson3-3.md)
 
 link to lesson4-1: Counting Elements PremCheck (https://github.com/msaei/codility/blob/master/lessons/lesson4-1.md)
+
+link to lesson4-2: Counting Elements FrogRiverOne (https://github.com/msaei/codility/edit/master/lessons/lesson4-2.md)
