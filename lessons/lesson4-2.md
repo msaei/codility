@@ -3,6 +3,7 @@
 link to question: (https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/)
 
 ### solution for javascript
+(works correctly but has performance issue for big arrays)
 ```
 function solution(X, A) {
     // write your code in JavaScript (Node.js 8.9.4)
@@ -20,6 +21,7 @@ function solution(X, A) {
 ```
 
 ### solution for javascript 2
+(works correctly but has performance issue for big arrays)
 ```
 function solution(X, A) {
     // write your code in JavaScript (Node.js 8.9.4)
@@ -39,6 +41,28 @@ function solution(X, A) {
         
     }
     return lastLeave;
+}
+
+```
+
+### solution for javascript 3
+(works properly for X les than 5; problem of bitwise operation which parse number to 32 bits only)
+```
+function solution(X, A) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    let val = 0;
+    let route = 0;
+    let complete = Math.pow(2,X) - 1;
+    //console.log(Math.pow(2,0));
+    for ( i = 0; i < A.length; i++) {
+        val = Math.pow(2,(A[i]-1));
+        route = route | val ;
+        console.log(route);
+        if ( route == complete ) {
+            return i;
+        }
+    }
+    return i = -1;
 }
 
 ```
