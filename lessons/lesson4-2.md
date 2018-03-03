@@ -66,3 +66,28 @@ function solution(X, A) {
 }
 
 ```
+
+### solution for javascript 4 (100-40)
+(works corectly but has performane issue for big arrays)
+```
+function solution(X, A) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    if (A.length < X) {
+        return -1;
+    }
+    let route = [];
+    
+    //console.log(Math.pow(2,0));
+    for ( i = 0; i < A.length; i++) {
+        if ((A[i] <= X) && (route.indexOf(A[i]) == -1)) {
+            route.push(A[i]);
+        }
+        if (route.length == X) {
+            return i;
+        }
+        //console.log(route);
+    }
+    return i = -1;
+}
+
+```
