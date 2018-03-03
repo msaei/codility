@@ -19,6 +19,7 @@ function solution(X, A) {
     }
     return -1;
 }
+```
 
 ### solution for javascript 1 (100-60)
 (works correctly but has performance issue for big arrays)
