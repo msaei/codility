@@ -45,6 +45,25 @@ class Solution {
 
 ```
 
+### solution for python (100-100)
+```
+def solution(X, A):
+    # write your code in Python 3.6
+    route = [0]*X
+    steps = 0
+    for i in range(len(A)):
+        if (route[A[i] - 1] == 0):
+            route[A[i] - 1] = 1
+            steps += 1
+        if (steps == X):
+            return i
+    return -1
+    
+    pass
+    
+```
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ### solution for javascript 1 (100-60)
 (works correctly but has performance issue for big arrays)
 ```
