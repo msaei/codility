@@ -1,8 +1,26 @@
 ## Lesson 4: Counting Elements
 ## forgRiverOne
 link to question: (https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/)
+### solution for javascript (100-100)
+```
+function solution(X, A) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    let route = Array(X).fill(0);
+    let steps = 0;
+    for ( i = 0; i < A.length; i++ ) {
+        if ( route[A[i] -1] == 0 ) {
+            route[A[i] - 1] = 1;
+            steps++;
+        }
+        
+        if (steps == X) {
+            return i;
+        }
+    }
+    return -1;
+}
 
-### solution for javascript
+### solution for javascript 1 (100-60)
 (works correctly but has performance issue for big arrays)
 ```
 function solution(X, A) {
@@ -20,7 +38,7 @@ function solution(X, A) {
 
 ```
 
-### solution for javascript 2
+### solution for javascript 2 (100-60)
 (works correctly but has performance issue for big arrays)
 ```
 function solution(X, A) {
@@ -45,7 +63,7 @@ function solution(X, A) {
 
 ```
 
-### solution for javascript 3
+### solution for javascript 3 (40-40)
 (works properly for X les than 5; problem of bitwise operation which parse number to 32 bits only)
 ```
 function solution(X, A) {
