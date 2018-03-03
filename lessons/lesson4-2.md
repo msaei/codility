@@ -20,6 +20,30 @@ function solution(X, A) {
     return -1;
 }
 ```
+### solution for Java (100-100)
+```
+import java.util.Arrays;
+class Solution {
+    public int solution(int X, int[] A) {
+        // write your code in Java SE 8
+        int route[] = new int[X];
+        int steps = 0;
+        Arrays.fill(route, 0);
+        
+        for (int i = 0; i < A.length; i++ ) {
+            if (route[A[i] -1] == 0){
+                route[A[i] -1] = 1;
+                steps++;
+            }
+            
+            if (steps == X) return i;
+        }
+        
+        return -1;
+    }
+}
+
+```
 
 ### solution for javascript 1 (100-60)
 (works correctly but has performance issue for big arrays)
