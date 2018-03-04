@@ -20,6 +20,23 @@ function solution(A) {
 }
 
 ```
+
+### solution for python (100-100)
+```
+def solution(A):
+    # write your code in Python 3.6
+    checkList = [0] * len(A);
+    for i in range ( len(A) ):
+        if ( A[i] > 0 and A[i] <= len(A) ):
+            checkList[A[i] - 1] = 1;
+    try:
+        missed = checkList.index(0)
+    except:
+        return len(A)+1;
+    return missed + 1;
+    pass
+    
+```
 ### solution for javascript (100-25) 
 (works correctly but in big arrays has performance problem)
 ```
