@@ -66,6 +66,7 @@ def solution(A):
 ### solution for java (100-100) 
 (cool solution I found in the stack overflow)
 ```
+import java.util.Arrays;
 public int solution(int[] A) {
         // write your code in Java SE 8
         Arrays.sort(A);
