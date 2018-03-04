@@ -17,3 +17,5 @@ link to lesson4-1: Counting Elements PremCheck (https://github.com/msaei/codilit
 link to lesson4-2: Counting Elements FrogRiverOne (https://github.com/msaei/codility/blob/master/lessons/lesson4-2.md)
 
 link to lesson 4-3: Counting Elements MissingInteger (https://github.com/msaei/codility/blob/master/lessons/lesson4-3.md)
+
+link to lesson 4-4: Counting Elements MasCounters (https://github.com/msaei/codility/blob/master/lessons/lesson4-4.md)
