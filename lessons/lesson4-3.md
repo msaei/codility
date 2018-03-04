@@ -1,3 +1,6 @@
+## Lesson 4-3: Counting Elements 
+## MissingInteger
+link to the question: (https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/)
 ### solution for javascript (100-25) 
 (works correctly but in big arrays has performance problem)
 ```
