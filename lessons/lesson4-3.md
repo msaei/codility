@@ -63,17 +63,21 @@ def solution(A):
     pass
     
 ```
-### solution for javascript (100-25) 
-(works correctly but in big arrays has performance problem)
+### solution for java (100-100) 
+(cool solution I found in the stack overflow)
 ```
-function solution(A) {
-    for ( i = 0; i < A.length; i++) {
-        if ( A.indexOf(i+1) == -1 ) {
-            return (i + 1);
+public int solution(int[] A) {
+        // write your code in Java SE 8
+        Arrays.sort(A);
+        int y = 1;
+        for (int i = 0; i < A.length; i++) {
+            if (y < A[i]) {
+                return y;
+            }
+            if (y == A[i])
+                y++;
         }
+        return y;
     }
-    return A.length + 1;
-
-}
 
 ```
