@@ -33,6 +33,42 @@ function solution(N, A) {
 
 ```
 
+###  solution for Java (100-100)
+```
+import java.util.*;
+class Solution {
+    public int[] solution(int N, int[] A) {
+        // write your code in Java SE 8
+        int result[] = new int[N];
+        Arrays.fill(result, 0);
+        int max = 0;
+        int counterMax = 0;
+        
+        for (int i = 0; i < A.length; i++) {
+            if ( A[i] > N ) {
+                counterMax = max;
+            } else {
+                if ( result[A[i] - 1] < counterMax) {
+                    result[A[i] - 1] = counterMax;
+                }
+                result[A[i] - 1]++;
+                if (result[A[i] - 1] > max) {
+                    max = result[A[i] - 1];
+                }
+            }
+        }
+        
+        for (int j = 0; j < result.length; j++) {
+            if ( result[j] < counterMax) {
+                result[j] = counterMax;
+            }
+        }
+        return result;
+    }
+}
+
+```
+
 ### solution for javascript (100-60)
 (works properly but has performance issue with large size arrays)
 ```
