@@ -68,6 +68,31 @@ class Solution {
 }
 
 ```
+### solution for python (100-100)
+```
+def solution(N, A):
+    # write your code in Python 3.6
+    counters = [0] * N
+    max = 0
+    maxCounter = 0
+    for i in range(len(A)):
+        if (A[i] > N) :
+            maxCounter = max
+        else :
+            if (counters[A[i] - 1] < maxCounter):
+                counters[A[i] - 1] = maxCounter
+            counters[A[i] - 1] += 1
+            if (counters[A[i] - 1] > max):
+                max = counters[A[i] - 1]
+    
+    for i in range(N):
+        if (counters[i] < maxCounter):
+            counters[i] = maxCounter
+    
+    return counters
+    pass
+    
+```
 
 ### solution for javascript (100-60)
 (works properly but has performance issue with large size arrays)
