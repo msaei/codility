@@ -15,3 +15,18 @@ function solution(A, B, K) {
 }
 
 ```
+
+### solution for Java (100-100)
+```
+class Solution {
+    public int solution(int A, int B, int K) {
+        // write your code in Java SE 8
+        int result = (B / K);
+        result -= (A / K);
+        if ( A % K == 0)
+        result++;
+        return result;
+    }
+}
+
+```
