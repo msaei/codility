@@ -20,3 +20,26 @@ function solution(A) {
 }
 
 ```
+
+### solution in Java (100-100)
+```
+class Solution {
+    public int solution(int[] A) {
+        // write your code in Java SE 8
+        int passing = 0;
+        int eastCars = 0;
+        for (int i = 0; i < A.length; i++) {
+            if ( A[i] == 1) {
+                passing += eastCars;
+            }else{
+                eastCars++;
+            }
+            if(passing > 1000000000) {
+                return -1;
+            }
+        }
+        return passing;
+    }
+}
+
+```
