@@ -43,3 +43,22 @@ class Solution {
 }
 
 ```
+
+### solution for python (100-100)
+```
+def solution(A):
+    # write your code in Python 3.6
+    passing = 0
+    eastCars = 0
+    for i in range(len(A)):
+        if (A[i] == 1):
+            passing += eastCars
+        else :
+            eastCars += 1
+        if (passing > 1000000000):
+            return -1
+    
+    return passing
+    pass
+    
+```
