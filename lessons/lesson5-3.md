@@ -24,7 +24,7 @@ function getmin (str) {
 
 ```
 
-### solution for Java
+### solution for Java(100-0)
 ```
 import java.util.*;
 class Solution {
