@@ -23,3 +23,30 @@ function getmin (str) {
 }
 
 ```
+
+### solution for Java
+```
+import java.util.*;
+class Solution {
+    public int[] solution(String S, int[] P, int[] Q) {
+        // write your code in Java SE 8
+        String part ;
+        int result[] = new int[P.length];
+        Arrays.fill(result, 0);
+        for ( int i = 0; i < P.length; i++) {
+            part = S.substring(P[i], Q[i] + 1);
+            result[i] = getmin(part);
+        }
+        return result;
+    }
+    
+    private int getmin(String str) {
+        if (str.indexOf('A') >= 0) return 1;
+        if (str.indexOf('C') >= 0) return 2;
+        if (str.indexOf('G') >= 0) return 3;
+        if (str.indexOf('T') >= 0) return 4;
+        return -1;
+    }
+}
+
+```
