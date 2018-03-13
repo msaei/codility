@@ -50,3 +50,26 @@ class Solution {
 }
 
 ```
+
+### solution for python(100-100)
+```
+def solution(S, P, Q):
+    # write your code in Python 3.6
+    part = ''
+    result = [0]*len(P)
+    for i in range(len(P)):
+        part = S[P[i]:Q[i]+1]
+        result[i] = getMin(part)
+    return result
+    pass
+
+def getMin(str):
+    if 'A' in str:
+        return 1
+    if 'C' in str:
+        return 2
+    if 'G' in str:
+        return 3
+    if 'T' in str:
+        return 4
+```
