@@ -3,7 +3,7 @@
 link to question: (https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/)
 
 ### solution for python (100-100)
-I find this in (https://codesays.com/2014/solution-to-min-avg-two-slice-by-codility/#comment-920)
+I found this in (https://codesays.com/2014/solution-to-min-avg-two-slice-by-codility/#comment-920)
 ```
 def solution(A):
     min_avg_value = (A[0] + A[1])/2.0   # The mininal average
