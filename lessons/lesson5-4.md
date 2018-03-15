@@ -30,6 +30,32 @@ function solution(A) {
 
 ```
 
+### solution for Java (100-100)
+```
+class Solution {
+    public int solution(int[] A) {
+        // write your code in Java SE 8
+        int min = (A[0] + A[1]) * 3;
+        int result = 0;
+        for (int i = 1; i < A.length - 2; i++) {
+            if ((A[i] + A[i+1]) * 3 < min) {
+                min = (A[i] + A[i+1]) * 3;
+                result = i;
+            }
+            if ((A[i] + A[i+1] + A[i+2]) * 2 < min) {
+                min = (A[i] + A[i+1] + A[i+2]) * 2;
+                result = i;
+            }
+        }
+        if ((A[A.length -1] + A[A.length - 2]) * 3 < min ){
+            return A.length - 2;
+        }
+        return result;
+    }
+}
+
+```
+
 ### solution for python (100-100)
 I found this in (https://codesays.com/2014/solution-to-min-avg-two-slice-by-codility/#comment-920)
 ```
