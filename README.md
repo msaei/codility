@@ -28,10 +28,10 @@ link to lesson 5-3: Prefix Sums GenomicRangeQuery (https://github.com/msaei/codi
 
 link to lesson 5-4: Prefix Sums MinAvgTwoSlices (https://github.com/msaei/codility/blob/master/lessons/lesson5-4.md)
 
-link to lesson 6-1: Sorting Triangle ()
+link to lesson 6-1: Sorting Triangle (https://github.com/msaei/codility/blob/master/lessons/lesson6-1.md)
 
-link to lesson 6-2: Sorting Distinct ()
+link to lesson 6-2: Sorting Distinct (https://github.com/msaei/codility/blob/master/lessons/lesson6-2.md)
 
-link to lesson 6-3: Sorting MaxProductOfThree ()
+link to lesson 6-3: Sorting MaxProductOfThree (https://github.com/msaei/codility/blob/master/lessons/lesson6-3.md)
 
-link to lesson 6-4: Sorting NumberOfDiscIntersections ()
+link to lesson 6-4: Sorting NumberOfDiscIntersections (https://github.com/msaei/codility/blob/master/lessons/lesson6-4.md)
