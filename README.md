@@ -26,4 +26,12 @@ link to lesson 5-2: Prefix Sums PassingCars (https://github.com/msaei/codility/b
 
 link to lesson 5-3: Prefix Sums GenomicRangeQuery (https://github.com/msaei/codility/blob/master/lessons/lesson5-3.md)
 
-link to lesson 5-: Prefix Sums MinAvgTwoSlices (https://github.com/msaei/codility/blob/master/lessons/lesson5-4.md)
+link to lesson 5-4: Prefix Sums MinAvgTwoSlices (https://github.com/msaei/codility/blob/master/lessons/lesson5-4.md)
+
+link to lesson 6-1: Sorting Triangle ()
+
+link to lesson 6-2: Sorting Distinct ()
+
+link to lesson 6-3: Sorting MaxProductOfThree ()
+
+link to lesson 6-4: Sorting NumberOfDiscIntersections ()
