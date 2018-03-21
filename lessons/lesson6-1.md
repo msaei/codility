@@ -44,7 +44,7 @@ class Solution {
 }
 ```
 
-solution for python(100-100)
+### solution for python(100-100)
 ```
 def solution(A):
     # write your code in Python 3.6
