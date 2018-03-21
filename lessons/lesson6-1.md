@@ -21,9 +21,11 @@ function solution(A) {
 
 ```
 
-### solution for Java 
+### solution for Java(100-100)
+for resolve the overflow problem used BigInteger
 ```
 import java.util.Arrays;
+import java.math.BigInteger;
 class Solution {
     public int solution(int[] A) {
         // write your code in Java SE 8
@@ -32,12 +34,12 @@ class Solution {
         return 0;
         
         for (int i = 0; i < A.length -2; i++){
-            if ( A[i] + A[i+1] > A[i+2]) {
+            
+            if ( BigInteger.valueOf(A[i]).add(BigInteger.valueOf(A[i+1])).compareTo(BigInteger.valueOf(A[i+2])) > 0) {
                 return 1;
             }
         }
         return 0;
     }
 }
-
 ```
