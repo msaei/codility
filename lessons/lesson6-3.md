@@ -17,3 +17,23 @@ function solution(A) {
 }
 
 ```
+
+### solution for Java()
+```
+
+import java.util.Arrays;
+
+class Solution {
+    public int solution(int[] A) {
+        // write your code in Java SE 8
+        Arrays.sort(A);
+        int N = A.length;
+        int max = A[N-1] * A[N-2] * A[N-3];
+        int tempMax = A[0] * A[1] * A[N-1];
+        if (tempMax > max)
+        return tempMax;
+        return max;
+    }
+}
+
+```
