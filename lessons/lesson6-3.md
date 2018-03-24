@@ -37,3 +37,18 @@ class Solution {
 }
 
 ```
+
+### solution for python(100-100)
+```
+
+def solution(A):
+    # write your code in Python 3.6
+    A.sort()
+    max = A[-1] * A[-2] * A[-3]
+    tempMax = A[0] * A[1] * A[-1]
+    if (tempMax > max):
+        return tempMax
+    return max
+    pass
+    
+```
