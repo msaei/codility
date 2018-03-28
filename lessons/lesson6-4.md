@@ -5,6 +5,38 @@ link to question: (https://app.codility.com/programmers/lessons/6-sorting/number
 ### solution for python
 ```
 def solution(A):
+    # write your code in Python 3.6
+    if (len(A) < 2):
+        return 0
+    rightEdges = [0] * len(A)
+    leftEdges = [0] * len(A)
+    for i in range(len(A)):
+        rightEdges[i] = i + A[i]
+        leftEdges[i] = i - A[i]
+    rightEdges.sort()
+    leftEdges.sort()
+    
+    intersections = 0
+    leyers = 0
+    while (len(rightEdges) > 0):
+        rightEdge = rightEdges.pop(-1)
+        while (rightEdge < leftEdges[-1]):
+            leftEdges.pop(-1)
+            leyers -= 1
+        intersections += leyers
+        if (intersections >= 10000000):
+            return -1
+        leyers += 1
+        leftEdge = leftEdges[-1]
+        
+    return intersections
+    pass
+    
+```
+
+### solution for python
+```
+def solution(A):
     B = [0] * len(A)
     C = [0] * len(A)
     overDisk = 0
