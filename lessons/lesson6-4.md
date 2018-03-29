@@ -2,7 +2,7 @@
 ## NumberOfDiscIntersections
 link to question: (https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/)
 
-### solution for python
+### solution for python(100-100)
 ```
 def solution(A):
     # write your code in Python 3.6
