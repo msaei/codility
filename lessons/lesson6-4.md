@@ -34,7 +34,48 @@ def solution(A):
     
 ```
 
+### solution for javascript(100-100)
+```
+function solution(A) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    N = A.length;
+    if (N < 2) 
+    return 0;
+    rightEdges = Array(N).fill(0);
+    leftEdges = Array(N).fill(0);
+    intersections = 0;
+    layers = 0;
+    
+    for (i=0; i<N; i++) {
+        rightEdges[i] = i + A[i];
+        leftEdges[i] = i - A[i];
+    }
+    
+    rightEdges.sort((a, b) => (a - b));
+    leftEdges.sort((a, b) => (a - b));
+    
+    while (rightEdges.length > 0) {
+        rightEdge = rightEdges.pop();
+        
+        while(rightEdge < leftEdges[leftEdges.length - 1]) {
+            leftEdges.pop();
+            layers--;
+        }
+        intersections += layers;
+        layers++
+        if (intersections > 10000000)
+        return -1;
+        
+    }
+    
+    return intersections;
+    
+}
+
+```
+
 ### solution for python
+a creative solution which solve the problem in O(n) time
 ```
 def solution(A):
     B = [0] * len(A)
