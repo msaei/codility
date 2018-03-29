@@ -24,7 +24,7 @@ def solution(A):
             leftEdges.pop(-1)
             leyers -= 1
         intersections += leyers
-        if (intersections >= 10000000):
+        if (intersections > 10000000):
             return -1
         leyers += 1
         leftEdge = leftEdges[-1]
