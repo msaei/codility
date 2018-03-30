@@ -38,8 +38,8 @@ link to lesson 6-4: Sorting NumberOfDiscIntersections (https://github.com/msaei/
 
 link to lesson 7-1: Stacks and Queues StoneWall (https://github.com/msaei/codility/blob/master/lessons/lesson7-1.md)
 
-link to lesson 7-1: Stacks and Queues Brackets (https://github.com/msaei/codility/blob/master/lessons/lesson7-2.md)
+link to lesson 7-2: Stacks and Queues Brackets (https://github.com/msaei/codility/blob/master/lessons/lesson7-2.md)
 
-link to lesson 7-1: Stacks and Queues Fish (https://github.com/msaei/codility/blob/master/lessons/lesson7-3.md)
+link to lesson 7-3: Stacks and Queues Fish (https://github.com/msaei/codility/blob/master/lessons/lesson7-3.md)
 
-link to lesson 7-1: Stacks and Queues Nesting (https://github.com/msaei/codility/blob/master/lessons/lesson7-4.md)
+link to lesson 7-4: Stacks and Queues Nesting (https://github.com/msaei/codility/blob/master/lessons/lesson7-4.md)
