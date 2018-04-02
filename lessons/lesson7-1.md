@@ -34,3 +34,42 @@ def solution(H):
     return N
     
 ```
+
+### solution for javascript
+```
+function solution(H) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    let blocks = 0;
+    const N = H.length;
+    let stones = [];
+    stones.push(H[0]);
+    let lastStone = H[0];
+    
+    for (i = 1; i < N; i++){
+        
+        if (H[i] == lastStone){
+            continue;
+        }
+
+        while (H[i] < lastStone){
+            stones.pop();
+            blocks++;
+            if ( stones.length == 0){
+               lastStone = 0;
+            } else {
+               lastStone = stones[stones.length -1];
+            }
+        }
+        if (H[i] > lastStone){
+            stones.push(H[i]);
+            lastStone = H[i];
+        }
+
+    }
+    
+    blocks += stones.length;
+    return blocks;
+    
+}
+
+```
