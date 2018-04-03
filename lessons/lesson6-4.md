@@ -74,6 +74,50 @@ function solution(A) {
 
 ```
 
+### solution for Java(90-100)
+overflow problem
+```
+import java.util.Arrays;
+class Solution {
+    public int solution(int[] A) {
+        // write your code in Java SE 8
+        int l = A.length;
+        int leftIndex = l - 1;
+        long rightEdge = 0;
+        long[] rightEdges = new long[l];
+        long[] leftEdges = new long[l];
+        Arrays.fill(rightEdges, 0);
+        Arrays.fill(leftEdges, 0);
+        int intersections = 0;
+        int layers = 0;
+        
+        for (int i = 0; i < l; i++){
+            rightEdges[i] = i + A[i];
+            leftEdges[i] = i - A[i];
+        }
+        Arrays.sort(rightEdges);
+        Arrays.sort(leftEdges);
+        
+        for (int i = l-1; i > -1; i--){
+            rightEdge = rightEdges[i];
+            
+            while ( rightEdge < leftEdges[leftIndex]){
+                leftIndex--;
+                layers--;
+            }
+            intersections += layers;
+            layers++;
+            if (intersections > 10000000)
+            return -1;
+            
+        }
+        return intersections;
+        
+    }
+}
+
+```
+
 ### solution for python
 a creative solution which solve the problem in O(n) time
 ```
