@@ -73,3 +73,43 @@ function solution(H) {
 }
 
 ```
+
+### solution for Java(100-100)
+```
+import java.util.Arrays;
+class Solution {
+    public int solution(int[] H) {
+        // write your code in Java SE 8
+        int blocks = 0;
+        int N = H.length;
+        int[] stones = new int[N];
+        stones[0] = H[0];
+        int stoneLength = 1;
+        int lastStone = H[0];
+        
+        for(int i = 1; i < N; i++){
+            if (H[i] == lastStone){
+                continue;
+            }
+            while (H[i] < lastStone){
+                stoneLength--;
+                blocks++;
+                if ( stoneLength == 0){
+                    lastStone = 0;
+                } else {
+                    lastStone = stones[stoneLength-1];
+                }
+            }
+            if (H[i] > lastStone){
+                stoneLength++;
+                stones[stoneLength - 1] = H[i];
+                lastStone = H[i];
+            }
+        
+        }
+        blocks += stoneLength;
+        return blocks;
+    }
+}
+
+```
