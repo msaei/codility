@@ -65,3 +65,52 @@ function solution(S) {
 }
 
 ```
+### solution in Java(33)
+again types and push and pop problem
+```
+class Solution {
+    public int solution(String S) {
+        // write your code in Java SE 8
+        String[] stack = new String[S.length()];
+        int index = 0;
+        String chr = new String();
+        for (int i = 0; i < S.length(); i++){
+            chr = S.substring(i,i+1);
+            if (chr.indexOf('(') == 0){
+                stack[index] = chr;
+                index++;
+                continue;
+            }
+            if (chr.indexOf('{') == 0){
+                stack[index] = chr;
+                index++;
+                continue;
+            }
+            if (chr.indexOf('[') == 0){
+                stack[index] = chr;
+                index++;
+                continue;
+            }
+            if (chr.indexOf(')') == 0 && stack[index -1].indexOf('(') == 0){
+                if (index > 0 ) {index--;}
+                continue;
+            }
+            if (chr.indexOf(']') == 0 && stack[index -1].indexOf('[') == 0){
+                if (index > 0 ) {index--;}
+                continue;
+            }
+            if (chr.indexOf('}') == 0 && stack[index -1].indexOf('{') == 0){
+                if (index > 0 ) {index--;}
+                continue;
+            }
+            return 0;
+        }
+        if (index > 0){
+            return 0;
+        }
+        
+        return 1;
+    }
+}
+
+```
