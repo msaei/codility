@@ -32,3 +32,36 @@ def solution(S):
     pass
     
 ```
+
+solution for javascript(100-100)
+```
+function solution(S) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    let stack = [];
+    for (i = 0; i < S.length; i++){
+        if ('({['.includes(S[i])){
+            stack.push(S[i]);
+            continue;
+        }
+        if ( S[i] == ']' && stack[stack.length -1] == '['){
+            stack.pop();
+            continue
+        }
+        if ( S[i] == ')' && stack[stack.length -1] == '('){
+            stack.pop();
+            continue
+        }
+        if ( S[i] == '}' && stack[stack.length -1] == '{'){
+            stack.pop();
+            continue
+        }
+        return 0;
+    }
+    if (stack.length > 0){
+        return 0;
+    }
+    
+    return 1;
+}
+
+```
