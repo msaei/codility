@@ -26,3 +26,36 @@ def solution(A, B):
     pass
     
 ```
+
+### solution for javascript(100-100)
+```
+function solution(A, B) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    let downStack = [];
+    let survive = 0;
+    for (i = 0; i < A.length; i++){
+        
+        if (B[i] == 0) {
+            // flowing upstream
+            while (downStack.length > 0) {
+                if (A[i] < downStack[downStack.length - 1]){
+                    //the fish got eaten
+                    survive--;
+                    break;
+                } else {
+                    //the fish ate fish
+                    downStack.pop()
+                }
+            }
+            survive++;
+            
+        } else {
+            //flowing downstream
+            downStack.push(A[i]);
+        }
+    }
+    survive += downStack.length;
+    return survive;
+}
+
+```
