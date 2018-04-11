@@ -21,3 +21,29 @@ def solution(S):
     pass
     
 ```
+
+### solution for javascript(100-100)
+```
+
+function solution(S) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    stack = 0;
+    for (i = 0; i < S.length; i++){
+        if (S[i] == '('){
+            stack++;
+        }
+        if (S[i] == ')'){
+            stack--;
+            if (stack < 0){
+                return 0;
+            }
+        }
+    }
+    if (stack > 0){
+        return 0;
+    }
+    return 1;
+    
+}
+
+```
