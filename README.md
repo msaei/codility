@@ -43,3 +43,7 @@ link to lesson 7-2: Stacks and Queues Brackets (https://github.com/msaei/codilit
 link to lesson 7-3: Stacks and Queues Fish (https://github.com/msaei/codility/blob/master/lessons/lesson7-3.md)
 
 link to lesson 7-4: Stacks and Queues Nesting (https://github.com/msaei/codility/blob/master/lessons/lesson7-4.md)
+
+link to lesson 8-1: Leader Dominator (https://github.com/msaei/codility/blob/master/lessons/lesson8-1.md)
+
+link to lesson 8-2: Leader EquiLeader (https://github.com/msaei/codility/blob/master/lessons/lesson8-2.md)
