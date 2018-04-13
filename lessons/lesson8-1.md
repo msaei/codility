@@ -2,10 +2,13 @@
 ## Dominator
 link to question: (https://app.codility.com/programmers/lessons/8-leader/dominator/)
 
-### solution for python
+### solution for python(100-100)
 ```
 def solution(A):
     # write your code in Python 3.6
+    
+    if len(A) < 2:
+        return len(A) - 1
     counter = 0
     
     B = A[:]
