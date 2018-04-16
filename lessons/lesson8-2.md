@@ -1,7 +1,7 @@
 ## Lesson 8: Leader
 ## EquiLeader
 link to question: (https://app.codility.com/programmers/lessons/8-leader/equi_leader/)
-### solution for python
+### solution for python(100-100)
 ```
 def getCountOf(B, leader):
     count = 0
