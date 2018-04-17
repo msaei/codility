@@ -47,3 +47,9 @@ link to lesson 7-4: Stacks and Queues Nesting (https://github.com/msaei/codility
 link to lesson 8-1: Leader Dominator (https://github.com/msaei/codility/blob/master/lessons/lesson8-1.md)
 
 link to lesson 8-2: Leader EquiLeader (https://github.com/msaei/codility/blob/master/lessons/lesson8-2.md)
+
+link to lesson 9-1: Maximum slice problem MaxDoubleSliceSum (https://github.com/msaei/codility/blob/master/lessons/lesson9-1.md)
+
+link to lesson 9-2: Maximum slice problem MaxProfit (https://github.com/msaei/codility/blob/master/lessons/lesson9-2.md)
+
+link to lesson 9-3: Maximum slice problem MaxSliceSum (https://github.com/msaei/codility/blob/master/lessons/lesson9-3.md)
