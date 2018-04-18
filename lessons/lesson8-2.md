@@ -34,3 +34,40 @@ def solution(A):
     return result
     pass
 ```
+###solution for javascript(100-100)
+```
+function solution(A) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    N = A.length;
+    B = A.slice(0,N);
+    B.sort((a, b) => (a-b));
+    let leader = B[Math.floor(N/2)];
+    let M = getCountOf(B, leader);
+    let flen = 0;
+    let slen = N;
+    let lcount = 0;
+    let result = 0;
+    for( i = 0; i < N-1; i++){
+        flen++;
+        slen--;
+        if(A[i] == leader){
+            lcount++;
+        }
+        if((lcount/flen > 0.5)&&((M-lcount)/slen>0.5)) {
+            result++;
+        }
+    }
+    return result;
+}
+
+function getCountOf(B, leader){
+    let count = 0;
+    for(i = 0; i < B.length; i++){
+        if (B[i] == leader) {
+            count++;
+        }
+    }
+    return count;
+}
+
+```
