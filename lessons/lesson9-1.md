@@ -28,3 +28,27 @@ def solution(A):
     pass
     
 ```
+```
+def solution(A):
+    # write your code in Python 3.6
+    N = len(A)
+    slice_sum = 0
+    result = 0
+    min_num = A[1]
+    for i in range(2, N-1):
+        a = A[i]
+        if a < min_num:
+            slice_sum = slice_sum + min_num
+            min_num = a
+        else:
+            slice_sum = slice_sum + a
+        if slice_sum < 0:
+            min_num = A[i+1]
+            slice_sum = 0
+            
+        result = max(result, slice_sum)
+    
+    return result
+    pass
+    
+```
