@@ -3,6 +3,7 @@
 link to question:(https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_double_slice_sum/)
 
 ###solution for python(100-100)
+
 I found it in code says in this link https://codesays.com/2014/solution-to-max-double-slice-sum-by-codility/
 ```
 def solution(A):
