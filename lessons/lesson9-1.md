@@ -30,26 +30,25 @@ def solution(A):
     pass
     
 ```
+### python(92)
+
 ```
 def solution(A):
     # write your code in Python 3.6
     N = len(A)
     covered_num = A[1]
-    if covered_num <= 0:
-        covered_num = 0
     slice_sum = 0
     result = 0
     for i in range(2, N - 1):
-        while slice_sum <= 0 and A[i] <= 0:
-            covered_num = 0
-            slice_sum = 0
-            continue
         
         if A[i] < covered_num:
             slice_sum = slice_sum + covered_num
             covered_num = A[i]
         else:
             slice_sum = slice_sum + A[i]
+        if slice_sum <= 0:
+            slice_sum = 0
+            covered_num = 0
             
         result = max(result, slice_sum)
         
