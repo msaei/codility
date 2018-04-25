@@ -3,7 +3,7 @@
 link to question:(https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_double_slice_sum/)
 
 ###solution for python(100-100)
-
+this solution is more readable but my solution is much faster and smarter, mine is right after this solution.
 I found it in code says in this link https://codesays.com/2014/solution-to-max-double-slice-sum-by-codility/
 ```
 def solution(A):
@@ -38,28 +38,27 @@ def solution(A):
     pass
     
 ```
-### python(92)
-my solution does not work for one of test case
+###solution for python(100-100)
+my solution is much faster and smarter.
 ```
 def solution(A):
     # write your code in Python 3.6
     N = len(A)
     covered_num = A[1]
-    slice_sum = 0
-    result = 0
+    saved_sum, slice_sum, result = 0, 0, 0
     for i in range(2, N - 1):
-        
         if A[i] < covered_num:
-            slice_sum = slice_sum + covered_num
+            slice_sum = slice_sum + covered_num - saved_sum
+            saved_sum = slice_sum + A[i]
+            if saved_sum > 0:
+                saved_sum = 0
             covered_num = A[i]
         else:
             slice_sum = slice_sum + A[i]
         if slice_sum <= 0:
-            slice_sum = 0
-            covered_num = 0
-            
+            slice_sum, covered_num, saved_sum = 0, 0, 0
         result = max(result, slice_sum)
-        
     return result
     pass
+
 ```
