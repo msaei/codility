@@ -54,10 +54,10 @@ link to lesson 9-2: Maximum slice problem MaxProfit (https://github.com/msaei/co
 
 link to lesson 9-3: Maximum slice problem MaxSliceSum (https://github.com/msaei/codility/blob/master/lessons/lesson9-3.md)
 
-link to lesson 10-1: Prime and composite numbers CountFactors ((https://github.com/msaei/codility/blob/master/lessons/lesson10-1.md)
+link to lesson 10-1: Prime and composite numbers CountFactors (https://github.com/msaei/codility/blob/master/lessons/lesson10-1.md)
 
-link to lesson 10-2: Prime and composite numbers  MinPerimeterRectangle ((https://github.com/msaei/codility/blob/master/lessons/lesson10-2.md)
+link to lesson 10-2: Prime and composite numbers  MinPerimeterRectangle (https://github.com/msaei/codility/blob/master/lessons/lesson10-2.md)
 
-link to lesson 10-3: Prime and composite numbers Flags ((https://github.com/msaei/codility/blob/master/lessons/lesson10-3.md)
+link to lesson 10-3: Prime and composite numbers Flags (https://github.com/msaei/codility/blob/master/lessons/lesson10-3.md)
 
-link to lesson 10-4: Prime and composite numbers Peaks ((https://github.com/msaei/codility/blob/master/lessons/lesson10-4.md)
+link to lesson 10-4: Prime and composite numbers Peaks (https://github.com/msaei/codility/blob/master/lessons/lesson10-4.md)
