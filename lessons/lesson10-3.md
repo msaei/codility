@@ -14,3 +14,24 @@ def solution(A):
       #set proper flag and update flagsets and flagpos list
   #loop through flagsets backward to find most valuable flags which is used during hike
   #and return that as answer
+
+
+get peaks function
+```
+def solution(A):
+    # write your code in Python 3.6
+    N = len(A)
+    peaks = [0] * N
+    leftHeight = A[0]
+    middleHeight = A[1]
+    for i in range(2, N):
+        rightHeight = A[i]
+        if middleHeight > leftHeight and middleHeight > rightHeight:
+            peaks[i-1] = 1
+        leftHeight, middleHeight = middleHeight, rightHeight
+    print(peaks)
+    return 0
+        
+    pass
+    
+```
