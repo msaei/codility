@@ -16,21 +16,45 @@ def solution(A):
   #and return that as answer
 
 
-get peaks function
+just passed sample test (6)
 ```
 def solution(A):
     # write your code in Python 3.6
     N = len(A)
-    peaks = [0] * N
+    best_record = 1
+    peaks = get_peaks(A)
+    last_peak = peaks.find('p')
+    i = 1
+    while i * (i + 1) < N - 2:
+        j = 1
+        while j < i + 1:
+            next_peak = peaks.find('p', last_peak + i)
+            if next_peak == -1:
+                return best_record
+            last_peak = next_peak
+            j += 1
+        i += 1
+        result = i
+            
+        
+    return i
+    pass
+
+def get_peaks(A):
+    # write your code in Python 3.6
+    N = len(A)
+    peaks = 'n'
     leftHeight = A[0]
     middleHeight = A[1]
     for i in range(2, N):
         rightHeight = A[i]
         if middleHeight > leftHeight and middleHeight > rightHeight:
-            peaks[i-1] = 1
+            peaks += 'p'
+        else:
+            peaks += 'n'
         leftHeight, middleHeight = middleHeight, rightHeight
-    print(peaks)
-    return 0
+    
+    return peaks
         
     pass
     
