@@ -16,26 +16,27 @@ def solution(A):
   #and return that as answer
 
 
-just passed sample test (13)
+just passed sample test (86)
 ```
 def solution(A):
     # write your code in Python 3.6
     N = len(A)
-    best_record = 1
+    best_record = 0
     peaks = get_peaks(A)
     #print(peaks)
-    last_peak = peaks.find('p')
+    
     i = 1
     while i * (i + 1) < N - 2:
+        last_peak = peaks.find('p')
         j = 1
         while j < i + 1:
-            
-            next_peak = peaks.find('p', last_peak + i)
-            #print(i, j, next_peak, last_peak)
+            next_peak = peaks.find('p', last_peak + i + 1)
+            j += 1
+            print(i, j, last_peak, next_peak)
             if next_peak == -1:
                 return best_record
             last_peak = next_peak
-            j += 1
+            
         i += 1
         best_record = i
             
