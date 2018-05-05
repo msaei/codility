@@ -1,12 +1,15 @@
 ## Lesson 10: Prime and composite numbers
 ## Peaks
 link to question: (https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/peaks/start/)
-solution for python:
+
+###solution for python(100-100):
 ```
 def solution(A):
     # write your code in Python 3.6
-    peaks = get_peaks(A)
     N = len(A)
+    if N < 3:
+        return 0
+    peaks = get_peaks(A)
     factors = get_factors(N)
     for factor in factors:
         if factor > 2:
@@ -50,6 +53,6 @@ def get_peaks(A):
     
     return peaks
     pass
-        
+
 ```
     
