@@ -4,8 +4,8 @@
 binaryGap (https://github.com/msaei/codility/blob/master/lessons/lesson1.md)
 
 ### Lesson 2: Arrays
-#### OddOccurrencesInArray (https://github.com/msaei/codility/blob/master/lessons/lesson2.md)
-#### CycelicRotation (https://github.com/msaei/codility/blob/master/lessons/lesson2_2.md)
+OddOccurrencesInArray (https://github.com/msaei/codility/blob/master/lessons/lesson2.md)\n
+CycelicRotation (https://github.com/msaei/codility/blob/master/lessons/lesson2_2.md)
 
 ### Lesson 3: Time Complexity
 TapeEquilibrium (https://github.com/msaei/codility/blob/master/lessons/lesson3-1.md)
