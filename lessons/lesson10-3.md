@@ -16,7 +16,7 @@ def solution(A):
   #and return that as answer
 
 
-just passed sample test (100-100)
+solution for python (100-100)
 ```
 def solution(A):
     # write your code in Python 3.6
