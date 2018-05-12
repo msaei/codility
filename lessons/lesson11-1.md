@@ -12,6 +12,7 @@ def solution(N, P, Q):
     pass
     
     def get_primes(N):
+    primes = []
     nums = [True] * (N + 1)
     nums[0] = nums[1] = False
     i = 2
@@ -22,8 +23,22 @@ def solution(N, P, Q):
                 nums[k] = False
                 k = k + i
         i = i + 1
-    return nums
-            
+    for i in range(2, N+1):
+        if nums[i]:
+            primes.append(i)
+    return primes        
+    pass
+
+def get_semiprimes(N):
+    semis = []
+    primes = get_primes(N//2)
+    print(primes)
+    for i in range(0, len(primes)):
+        for j in range(i, len(primes)):
+            m = primes[i] * primes[j]
+            if (m <= N):
+                semis.append(m)
+    return semis
     pass
     
 ```
