@@ -53,3 +53,58 @@ def get_precount(N):
     pass
     
 ```
+
+### solution in python(44)
+performance problem
+```
+def solution(N, P, Q):
+    # write your code in Python 3.6
+    precount = get_precount(N)
+    result = []
+    for i in range(len(P)):
+        result.append(precount[Q[i]] - precount[P[i] - 1])
+    return result
+    pass
+
+def get_primes(N):
+    primes = []
+    nums = [True] * (N + 1)
+    nums[0] = nums[1] = False
+    i = 2
+    while (i * i <= N):
+        if (nums[i]):
+            k = i * i
+            while (k <= N):
+                nums[k] = False
+                k = k + i
+        i = i + 1
+    for i in range(2, N+1):
+        if nums[i]:
+            primes.append(i)
+    return primes
+            
+    pass
+
+def get_semiprimes(N):
+    semis = []
+    primes = get_primes(N//2)
+    for i in range(0, len(primes)):
+        for j in range(i, len(primes)):
+            m = primes[i] * primes[j]
+            if (m <= N):
+                semis.append(m)
+    return semis
+    pass
+
+def get_precount(N):
+    precount = [0] * (N + 1)
+    semis = get_semiprimes(N)
+    for i in range(4, len(precount)):
+        precount[i] = precount[i-1]
+        if i in semis:
+            precount[i] += 1
+    return precount
+        
+    pass
+
+```
