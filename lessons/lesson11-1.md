@@ -11,4 +11,19 @@ def solution(N, P, Q):
     # iterate through P and Q and calculate the result using sum array O(N)
     pass
     
+    def get_primes(N):
+    nums = [True] * (N + 1)
+    nums[0] = nums[1] = False
+    i = 2
+    while (i * i <= N):
+        if (nums[i]):
+            k = i * i
+            while (k <= N):
+                nums[k] = False
+                k = k + i
+        i = i + 1
+    return nums
+            
+    pass
+    
 ```
