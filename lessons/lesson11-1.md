@@ -41,4 +41,15 @@ def get_semiprimes(N):
     return semis
     pass
     
+def get_precount(N):
+    precount = [0] * (N + 1)
+    semis = get_semiprimes(N)
+    for i in range(4, len(precount)):
+        precount[i] = precount[i-1]
+        if i in semis:
+            precount[i] += 1
+    return precount
+        
+    pass
+    
 ```
