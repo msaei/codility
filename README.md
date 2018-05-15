@@ -55,3 +55,6 @@ Peaks (https://github.com/msaei/codility/blob/master/lessons/lesson10-4.md)
 CountSemiprimes (https://github.com/msaei/codility/blob/master/lessons/lesson11-1.md)  
 CountNonDivisible (https://github.com/msaei/codility/blob/master/lessons/lesson11-2.md)
 
+### Lesson 12: Euclidean algorithm
+ChocolatesByNumbers ()
+CommonPrimeDivisors ()
