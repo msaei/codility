@@ -4,6 +4,7 @@ link to question: (https://app.codility.com/programmers/lessons/11-sieve_of_erat
 
 ### solution for python(100-50-77)
 performance problem
+link:(https://app.codility.com/demo/results/trainingUATJZ3-A5U/)
 ```
 def solution(A):
     # write your code in Python 3.6
