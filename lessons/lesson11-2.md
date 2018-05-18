@@ -3,7 +3,7 @@
 link to question: (https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_non_divisible/)
 
 ### solution for python(100-100)
-performance detail:(https://app.codility.com/demo/results/trainingA65QZ3-TWH/)
+performance detail:(https://app.codility.com/demo/results/trainingA65QZ3-TWH/)  
 got part of solution from:(https://codesays.com/2014/solution-to-count-non-divisible-by-codility/)
 ```
 def solution(A):
