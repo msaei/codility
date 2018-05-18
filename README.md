@@ -56,5 +56,5 @@ CountSemiprimes (https://github.com/msaei/codility/blob/master/lessons/lesson11-
 CountNonDivisible (https://github.com/msaei/codility/blob/master/lessons/lesson11-2.md)
 
 ### Lesson 12: Euclidean algorithm
-ChocolatesByNumbers ()
+ChocolatesByNumbers ()  
 CommonPrimeDivisors ()
