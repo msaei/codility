@@ -4,7 +4,7 @@ link to question: (https://app.codility.com/programmers/lessons/12-euclidean_alg
 
 the answer is lcm(N, M) divided by M, and since lcm(N, M) = N * M / gcd(N, M) divide by M, the answer is N / gcd(N, M)
 ### solution for python(100-100)
-link to performance detail: ()
+link to performance detail: (https://app.codility.com/demo/results/training277M4W-ECA/)
 ```
 def solution(N, M):
     # write your code in Python 3.6
