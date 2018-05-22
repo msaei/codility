@@ -58,3 +58,9 @@ CountNonDivisible (https://github.com/msaei/codility/blob/master/lessons/lesson1
 ### Lesson 12: Euclidean algorithm
 ChocolatesByNumbers (https://github.com/msaei/codility/blob/master/lessons/lesson12-1.md)  
 CommonPrimeDivisors (https://github.com/msaei/codility/blob/master/lessons/lesson12-2.md)
+
+### Lesson 13: Fibonacci numbers
+Ladder (https://github.com/msaei/codility/blob/master/lessons/lesson13-1.md)  
+FibFrog (https://github.com/msaei/codility/blob/master/lessons/lesson13-2.md)
+
+
