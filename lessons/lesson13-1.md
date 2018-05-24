@@ -3,8 +3,8 @@
 link to question: (https://app.codility.com/programmers/lessons/13-fibonacci_numbers/ladder/)  
 
 ### solution for python(100-75)
-performance detail (https://app.codility.com/demo/results/trainingXETK2D-QDD/)
-I dont get why is the time O[L**2] ???
+performance detail (https://app.codility.com/demo/results/trainingXETK2D-QDD/)  
+I dont get it; why the detected time  complexity is O[L**2] ???
 ```
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")
