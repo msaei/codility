@@ -28,7 +28,7 @@ def fibonacci(n):
 
 ### solution I found in codesays(100-100)
 different way to calculate modulo and power of 2 with bit manupulating (useng shift << and &)
-performance detail (https://app.codility.com/demo/results/trainingH6KJJE-HUA/)
+performance detail (https://app.codility.com/demo/results/trainingH6KJJE-HUA/)  
 code says link (https://codesays.com/2014/solution-to-ladder-by-codility/)
 ```
 def solution(A, B):
