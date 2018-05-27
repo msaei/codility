@@ -63,4 +63,8 @@ CommonPrimeDivisors (https://github.com/msaei/codility/blob/master/lessons/lesso
 Ladder (https://github.com/msaei/codility/blob/master/lessons/lesson13-1.md)  
 FibFrog (https://github.com/msaei/codility/blob/master/lessons/lesson13-2.md)
 
+### Lesson 14: Binary search algorithm
+NailingPlanks (https://github.com/msaei/codility/blob/master/lessons/lesson14-1.md)  
+MinMaxDivision (https://github.com/msaei/codility/blob/master/lessons/lesson14-2.md)
+
 
