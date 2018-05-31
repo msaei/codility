@@ -26,7 +26,7 @@ def remove_nailed_planks(nail_pos, A, B):
     pass
     
 ```
-binary search algorithm example  
+### binary search algorithm example  
 Problem: You are given n binary values x0, x1, . . . , xn−1, such that xi ∈ {0, 1}. This array
 represents holes in a roof (1 is a hole). You are also given k boards of the same size. The goal
 is to choose the optimal (minimal) size of the boards that allows all the holes to be covered
@@ -38,7 +38,7 @@ are also insufficient.
 There is the question of how to check whether size x is sufficient. We can go through all the
 indices from the left to the right and greedily count the boards. We add a new board only if
 there is a hole that is not covered by the last board.
-The total time complexity of such a solution is O(n log n) due to the binary search time.
+The total time complexity of such a solution is O(n log n) due to the binary search time.  
 sorce: (https://codility.com/media/train/12-BinarySearch.pdf)
 ```
 def boards(A, k):
