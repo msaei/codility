@@ -14,6 +14,7 @@ def solution(A, B, C):
     return -1
     pass
 
+# this function should refactor to use binary search instead of going through all planks
 def remove_nailed_planks(nail_pos, A, B):
     Edited_A = []
     Edited_B = []
