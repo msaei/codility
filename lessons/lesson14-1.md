@@ -40,7 +40,7 @@ There is the question of how to check whether size x is sufficient. We can go th
 indices from the left to the right and greedily count the boards. We add a new board only if
 there is a hole that is not covered by the last board.
 The total time complexity of such a solution is O(n log n) due to the binary search time.  
-sorce: (https://codility.com/media/train/12-BinarySearch.pdf)
+source: (https://codility.com/media/train/12-BinarySearch.pdf)
 ```
 def boards(A, k):
     n = len(A)
