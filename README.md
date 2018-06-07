@@ -68,10 +68,10 @@ NailingPlanks (https://github.com/msaei/codility/blob/master/lessons/lesson14-1.
 MinMaxDivision (https://github.com/msaei/codility/blob/master/lessons/lesson14-2.md)
 
 ### Lesson 15: Caterpillar method
-CountTriangles ()  
-AbsDistinct ()
-CountDistinctSlices ()  
-MinAbsSumOfTwo()
+CountTriangles (https://github.com/msaei/codility/blob/master/lessons/lesson15-1.md)  
+AbsDistinct (https://github.com/msaei/codility/blob/master/lessons/lesson15-2.md)
+CountDistinctSlices (https://github.com/msaei/codility/blob/master/lessons/lesson15-3.md)  
+MinAbsSumOfTwo(https://github.com/msaei/codility/blob/master/lessons/lesson15-4.md)
 
 
 
