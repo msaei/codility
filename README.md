@@ -69,7 +69,7 @@ MinMaxDivision (https://github.com/msaei/codility/blob/master/lessons/lesson14-2
 
 ### Lesson 15: Caterpillar method
 CountTriangles (https://github.com/msaei/codility/blob/master/lessons/lesson15-1.md)  
-AbsDistinct (https://github.com/msaei/codility/blob/master/lessons/lesson15-2.md)
+AbsDistinct (https://github.com/msaei/codility/blob/master/lessons/lesson15-2.md)  
 CountDistinctSlices (https://github.com/msaei/codility/blob/master/lessons/lesson15-3.md)  
 MinAbsSumOfTwo(https://github.com/msaei/codility/blob/master/lessons/lesson15-4.md)
 
