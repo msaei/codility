@@ -2,6 +2,28 @@
 ## MinMaxDivision
 link to question: (https://app.codility.com/programmers/lessons/14-binary_search_algorithm/min_max_division/)
 
+### solution for python: ()
+```
+def solution(K, M, A):
+    # write your code in Python 3.6
+    result = sum(A)//K
+    while True:
+        slice_sum = 0
+        slice_count = 1
+        for a in A:
+            slice_sum += a
+            if slice_sum  > result:
+                slice_count += 1
+                slice_sum = a
+        if slice_count > K:
+            result += 1
+        else:
+            return result
+            
+    pass
+    
+```
+
 
 ### binary search algorithm example  
 Problem: You are given n binary values x0, x1, . . . , xn−1, such that xi ∈ {0, 1}. This array
