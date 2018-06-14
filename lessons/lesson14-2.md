@@ -2,7 +2,8 @@
 ## MinMaxDivision
 link to question: (https://app.codility.com/programmers/lessons/14-binary_search_algorithm/min_max_division/)
 
-### solution for python: ()
+### solution for python: (50-50)
+performance details: (https://app.codility.com/demo/results/trainingT4NMAM-8V3/)
 ```
 def solution(K, M, A):
     # write your code in Python 3.6
